@@ -78,7 +78,7 @@ public class Invoice implements Payable
    } 
 
    // method required to carry out contract with interface Payable     
-   @Override                                                           
+//   @Override
    public double getPaymentAmount()                                    
    {                                                                   
       return getQuantity() * getPricePerItem(); // calculate total cost

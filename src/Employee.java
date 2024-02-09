@@ -1,7 +1,7 @@
 // Employee.java
 // Employee abstract superclass.
 
-public abstract class Employee 
+public abstract class Employee implements Payable
 {
    private final String firstName;
    private final String lastName;
@@ -44,6 +44,11 @@ public abstract class Employee
 
    // abstract method must be overridden by concrete subclasses
    public abstract double earnings(); // no implementation here
+
+
+   public double getPaymentAmount() {
+      return earnings();
+   }
 } // end abstract class Employee
 
 
