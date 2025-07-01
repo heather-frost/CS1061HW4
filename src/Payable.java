@@ -1,4 +1,4 @@
-public interface Payable {
+abstract public interface Payable {
     public abstract double getPaymentAmount();
 
 }
